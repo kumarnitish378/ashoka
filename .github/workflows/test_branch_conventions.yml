@@ -10,7 +10,6 @@ concurrency:
 
 jobs:
   check-merge-commits:
-    if: github.repository == 'ArduPilot/ardupilot'
     runs-on: ubuntu-latest
     container: ardupilot/ardupilot-dev-chibios:v0.2.0
 
