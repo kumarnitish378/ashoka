@@ -256,8 +256,8 @@ jobs:
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
           PATH="/github/home/.local/bin:$PATH"
           cd pr/
-          git config user.email "ardupilot-ci@ardupilot.org"
-          git config user.name "ArduPilot CI"
+          git config user.email "ci@ashoka.local"
+          git config user.name "Ashoka CI"
           git remote add target_repo https://github.com/${GITHUB_EVENT_PULL_REQUEST_BASE_REPO_FULL_NAME}
           git fetch --no-tags --prune --progress target_repo ${GITHUB_EVENT_PULL_REQUEST_BASE_REF}
           git rebase target_repo/${GITHUB_EVENT_PULL_REQUEST_BASE_REF}
